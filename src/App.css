@@ -1,38 +1,316 @@
-.App {
+h3,p{
+  margin: 0;
+}
+
+.banner{
+  background: url("https://i.picsum.photos/id/1/1280/500.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+#welcomeText{
+  position: absolute;
+  color: white;
+  top: 5%;
+  left: 5%;
+  transform: translate(-5%,-5%);
+  font-size: 20px;
+}
+
+.centralText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centralText h3{
+  font-weight: bolder;
+  font-size: 44px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centralText p{
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bannerBTNS{
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  transform: translate(-5%,-8%);
+}
+
+.bannerBTNS button, .registerCard button, .loginAdmin button{
+  color: white;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 30px;
+  border: 1px solid white;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.bannerBTNS button:nth-child(1){
+  border: none;
+}
+
+.loginAdmin{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 24%;
+  right: 8%;
+  transform: translate(-8%,-24%);
+}
+
+.loginAdmin label,input{
+  margin-bottom: 8px;
+  border:none;
+}
+
+.loginAdmin input{
+  padding: 4px;
+}
+
+.loginAdmin button{
+  width: 50%;
+  margin: 12px auto 0 auto;
+}
+
+.register{
+  width: 60%;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.register img{
+  width: 60%;
+}
+
+.registerCard{
+  color: white;
+  background: #684DFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  position: absolute;
+  right: 5%;
+  height: 50%;
+  width: 40%;
+}
+
+.registerCard h3{
+  text-transform: uppercase;
+}
+
+.registerCard label{
+  text-align: left;
+  width: 50%;
+}
+
+.registerCard input{
+  width: 50%;
+}
+
+.navbar{
+  height: 100px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.navbar h3{
+  color: #999999;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.navbar button{
+  color: #333333;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 30px;
+  border: 1px solid #333333;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.panel{
+  display: flex;
+  height: 120vh;
+}
+
+#home{
+  background: #99989A;
+}
+
+.panelNav{
+  background: #676667;
+  width: 30%;
+  height: 100%;
+}
+
+.panelNav h3{
+  padding:  20px 24px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.panelNav h3:hover{
+  background: #99989A;
+}
+
+.panelData{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-content{
+  background: #639399;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-content-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.panel-content-group div{
+  margin: 0 12px;
+}
+
+.card-section{
+  height: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-section h3{
+  color: #999999;
+}
+
+.card-half-width{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card{
+  height: 120px;
+  width: 40%;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.card-full-width{
+  width: 90%;
+}
+
+.content-card{
+  height: 80px;
+  width: 20%;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content-card h3{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.select-class-btn{
+  position: absolute;
+  left: 32%;
+}
+
+.download-text{
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.randomText{
+  width: 60%;
+  margin: 20px auto;
+}
+
+.randomText h3{
+  font-size: 32px;
+}
+
+.randomText p{
+  white-space: normal;
+  margin: 40px 0;
+}
+
+.randomText img {
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  height: 240px;
+  background: #353838;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+footer h3, footer p{
+  color: #D7D9D9;
+  font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-links{
+  display: flex;
+  align-items: center;
+}
+
+.footer-links h3{
+  text-transform: uppercase;
+  margin: 0 4px;
+  font-weight: normal;
+}
+
+footer i{
+  color: #D7D9D9;
+  margin: 0 12px;
 }
